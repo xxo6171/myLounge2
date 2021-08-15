@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6D4E1"
+    android:orientation="vertical"
+    tools:context="com.example.mylounge2.loadmap">
+
+    <fragment
+        android:id="@+id/naver_Map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.naver.maps.map.MapFragment"
+        app:navermap_latitude="37.3103"
+        app:navermap_longitude="126.8756"
+        app:navermap_zoom="15"
+      />
+
+
+
+</FrameLayout>

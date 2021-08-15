@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mylounge2">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_main"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".myPage"></activity>
+        <activity android:name=".splash1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlertReceiver2" />
+        <receiver android:name=".AlertReceiver" />
+
+        <activity android:name=".pc3" />
+        <activity android:name=".pc2" />
+        <activity android:name=".pc1" />
+        <activity
+            android:name=".list"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".reserve" />
+        <activity android:name=".look" />
+        <activity android:name=".splash"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".login" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".bus" />
+        <activity android:name=".loadmap" />
+        <activity android:name=".cancel" />
+        <activity android:name=".look_reserve" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="kczye55ssk" />
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bglounge2"
+    tools:context="com.example.mylounge2.look">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_pcName"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="PC"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="#66000000"
+
+            />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fillViewport="true">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="10dp"
+            />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:paddingTop="20dp">
+        <Button
+            android:id="@+id/btn_reserve"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_border"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="예약"/>
+    </LinearLayout>
+
+</LinearLayout>

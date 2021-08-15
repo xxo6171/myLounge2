@@ -1,0 +1,28 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.1"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven{
+            url 'https://navercorp.bintray.com/maps'
+        } //네이버 지도 api를 사용하기 위한 루트 build.gradle 수정사항
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglounge2"
+    android:orientation="vertical"
+    tools:context="com.example.mylounge2.login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/ansanlgo"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="실시간 예약 시스템"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로 그 인 하 세 요"
+            android:textColor="#fff"
+            android:paddingTop="40dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="학번"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+
+
+            />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:backgroundTint = "#fff"
+            android:maxLength="9"
+            android:maxLines="1"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="이름"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:backgroundTint = "#fff"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_border"
+                android:text="로그인"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_border"
+                android:text="회원가입"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
